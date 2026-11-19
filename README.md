@@ -1,13 +1,17 @@
 > [!WARNING]
-> **This repository is archived and no longer maintained.** It is the original client, from before
-> the device protocol was written down, and it does not speak that protocol.
+> **This repository is archived and no longer maintained.** It is the original .NET client, from
+> before the client protocol was written down, and it does not speak that protocol. The `0.x`
+> `Wbskt.Client` packages on nuget.org are this code; move to one of the SDKs below.
 >
-> The .NET SDK now lives in [wbskt/Wbskt](https://github.com/wbskt/Wbskt) under
-> `Clients/Wbskt.Client.Sdk`, and ships under the same package name, `Wbskt.Client`, from
-> `1.0.0-preview.1`. The `0.x` versions on nuget.org are this code and are deprecated: move to the
-> new package. For other platforms, see the ESP32 library
-> ([wbskt/Wbskt.Arduino](https://github.com/wbskt/Wbskt.Arduino)) and the Python SDK
-> (`Clients/python` in wbskt/Wbskt). The protocol itself is `Docs/Device.Protocol.md` there.
+> | Platform | Repository | Install |
+> |---|---|---|
+> | .NET | [wbskt/wbskt.dotnet](https://github.com/wbskt/wbskt.dotnet) | `dotnet add package Wbskt --prerelease` |
+> | Python | [wbskt/Wbskt.Python](https://github.com/wbskt/Wbskt.Python) | `pip install wbskt` |
+> | ESP32 / Arduino | [wbskt/Wbskt.Arduino](https://github.com/wbskt/Wbskt.Arduino) | `Wbskt` in the Arduino Library Manager or PlatformIO |
+>
+> The protocol they all implement is
+> [Docs/Client.Protocol.md](https://github.com/wbskt/Wbskt/blob/master/Docs/Client.Protocol.md) in
+> wbskt/Wbskt.
 
 ### Wbskt Client for Real-Time Communication
 
